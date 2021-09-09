@@ -4,13 +4,13 @@ pipeline{
         stage('Compile'){
             steps{
                 echo 'Compiled Successfully!!!!';
-                sh 'javac date.java'
+                
             }
         }
-    stage('Run'){
+    stage('Deploy'){
             steps{
                 echo 'Pass!!!!';
-                sh 'java date'
+               
             }
         }
     }
